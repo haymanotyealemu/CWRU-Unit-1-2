@@ -64,11 +64,11 @@ aside {
     
     
 }
-footer {
-    color: black;
-    padding: 20px;
-    clear: both;
-    background-color: #FFA500;
+ footer{
     
-
+    padding: 20px;
+    background-color: #FFA500;
+    clear: both;
+    
+   
 }
