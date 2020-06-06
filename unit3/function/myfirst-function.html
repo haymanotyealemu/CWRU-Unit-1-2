@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first function</title>
+</head>
+<body>
+
+    <h1>Open the console to see the magic!</h1>
+    <script>
+        // Create a Function called "adder" that take three arguments (x, y, z).
+
+        function adder(x,y,z) {
+
+        // The function should add the arguments together, and log the result to the console.
+            console.log(x + y + z);}
+
+        // Create a Function called "multiplier" that takes three arguments (x, y, z).
+
+        function multiplier(x,y,z) {
+           // The function should multiply the arguments, and log the result to the console.
+
+            console.log(x * y * z);
+        }
+        
+         // Create a Function called "isString" that takes three arguments (x, y, z).
+        // "isString" determines if all three arguments are strings and logs an appropriate response to the console.
+        function isString(x, y, z){
+            if (typeof x === "string" && typeof Y === "string" && typeof z === "string") { console.log("they are string");
+
+            }
+            else {
+                console.log("No... I don't believe these are strings.");
+            }
+        }
+    
+        function vowelChecker(x){
+            // vowelChecker will grab the first letter (character)...
+            var firstChar = x.toLowerCase().charAt(0);
+
+            // Then check if that first letter is a vowel.
+
+            if (firstChar === "a" || firstChar === "e" || firstChar === "i" || firstChar === "o" || firstChar === "u") {
+                console.log("OMG. The first letter is a vowel!");
+            }
+            
+
+            else  { console.log("First letter is NOT a vowel. *sadface*");
+           
+            }
+        }
+        // BONUS
+      // Creates a version of "adder" that returns its result. Function is called "adderReturn".
+        function adderReturn(x, y, z){
+            return x + y + z;
+        }
+         // Creates a version of "multiplier" that returns its result. Function is called "multiplierReturn".
+        function multiplierReturnme(x,y,z) {
+            return x * y * z;
+        }
+        
+        
+        // FUNCTION EXECUTION
+      //Call the adder function here.
+        console.log(adderReturn (2,3,4));
+        // Call the multiplier function here.
+        multiplier(1,2,3);
+
+        // Calling our isString function.
+        isString("fdteh", "nhvytev", "jalufe");
+
+         // Calling our vowelChecker function.
+        vowelChecker("Eek");
+        vowelChecker("Nah");
+
+
+
+    </script>
+</body>
+</html>
