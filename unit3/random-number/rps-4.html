@@ -45,9 +45,12 @@
                     wins++;
                     alert("You've won" + wins + "time(s)!"); 
 
-                    } else if (userGuess == "r" && computerGuess == "r" || userGuess == "p" && computerGuess == "p" || userGuess == "s" && computerGuess == "s") {
+                    } else if (userGuess === computerGuess) {
                         ties++;
                         alert("You've tied" +  ties + "time(s).");
+                    } else {
+                        losses++;
+                        alert("You've lost" + losses + "time(s).");
                     }
                     
                 
