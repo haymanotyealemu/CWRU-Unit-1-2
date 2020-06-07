@@ -36,11 +36,24 @@
                 alert("The computer chose" + computerGuess);
             
             // Check one of the win conditions. We'll worry about the others later.
+
+            // Win/lose conditions:
       
-                if (userGuess === "r" && computerGuess === "s") {
-                wins++;
-                alert("You've won" + wins + "time(s)!");
-                }
+                if ((userGuess === "r" && computerGuess === "s") ||
+                    (userGuess === "s" && computerGuess === "p")  || 
+                    (userGuess === "p" && computerGuess === "r")) {
+                    wins++;
+                    alert("You've won" + wins + "time(s)!"); 
+
+                    } else if (userGuess == "r" && computerGuess == "r" || userGuess == "p" && computerGuess == "p" || userGuess == "s" && computerGuess == "s") {
+                        ties++;
+                        alert("You've tied" +  ties + "time(s).");
+                    }
+                    
+                
+                
+
+                
             }
 
         } 
