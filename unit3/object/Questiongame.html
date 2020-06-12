@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question game</title>
+</head>
+<body>
+    <script>
+        var Question = [{ q: "Bat is a mamal animal" , a : "t"},
+        {q: " number 3 is an even number" , a :"f"},
+        {q : "London is the capital city of Germany" , a : "f"},
+        {q: "we can divide any number by zero", a : "f"},
+        {q: "Banana is a fruit" , a : "t"},
+        {q: "there is 12 months in a year" , a: "t"},
+        {q: "Tiangle has a three side" , a : "t"},
+        {q: "Google is a social media" , a : "f"},
+        {q: "html is a markup language" , a: "t"},
+        {q: "cat is not a domestic animal" , a : "f"}];
+        // We start the game with a score of 0.
+
+        var score = 0;
+
+        // Loop over every question object
+
+        for (var i = 0; i < Question.length; i++) {
+
+             // Display current question to user and ask OK/Cancel
+        var useranswer = confirm  (Question[i].q);
+
+            if ((useranswer === true && Question[i].a === "t") || (useranswer === false && Question[i].a === "f")) {
+                score++;
+                alert("You'r Right!");
+
+            }
+            else {
+                
+                alert("You'r Wrong.");
+            }
+
+        }
+    
+        // Show total at end
+    alert("You got " + score + "/" + Question.length);
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
